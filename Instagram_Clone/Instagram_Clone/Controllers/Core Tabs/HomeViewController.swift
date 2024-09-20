@@ -8,12 +8,36 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
+    private var viewModel : HomeViewModel?
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel = HomeViewModel()
         // Do any additional setup after loading the view.
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+         
+        // check Auth status
+        isUserSignedIn()
+    }
 
+    private func isUserSignedIn () {
+        guard let signInStatus = viewModel?.checkUserAuthenticatinStatus() else {
+            return
+        }
+        print("********************")
+        print("\(signInStatus)")
+        print("********************")
+        
+        if signInStatus  {
+            let vc = LoginVC()
+            vc.modalPresentationStyle = .fullScreen
+            present(vc , animated:  true)
+        }
+        
+    
+    }
+    
 }
 

@@ -33,7 +33,7 @@
         <scene sceneID="Ls6-aZ-55h">
             <objects>
                 <navigationController id="Hsg-2y-iXk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="Qec-Ce-Tjs"/>
+                    <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="Qec-Ce-Tjs"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SVd-KW-9xq">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="-437" y="-2220"/>
         </scene>
-        <!--ExpolreVC-->
+        <!--Home View Controller-->
         <scene sceneID="els-EC-QNg">
             <objects>
-                <viewController id="bq9-Rs-iHu" customClass="ExpolreVC" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bq9-Rs-iHu" customClass="HomeViewController" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="anV-S0-5vT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,7 +66,7 @@
         <scene sceneID="sq5-cW-zsK">
             <objects>
                 <navigationController id="Smm-vN-SGK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="D0o-H6-rrl"/>
+                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="D0o-H6-rrl"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ecF-o1-glb">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -83,7 +83,7 @@
         <scene sceneID="M0V-VC-XGF">
             <objects>
                 <navigationController id="wKm-hI-pLB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="Kam-qN-p4v"/>
+                    <tabBarItem key="tabBarItem" title="" image="plus" catalog="system" id="Kam-qN-p4v"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="LoI-bp-Ihx">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -100,7 +100,7 @@
         <scene sceneID="q6A-oN-D3X">
             <objects>
                 <navigationController id="pOp-ln-5zm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="plus" catalog="system" id="9DX-yq-prD"/>
+                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="9DX-yq-prD"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xRB-lp-OaN">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -113,10 +113,10 @@
             </objects>
             <point key="canvasLocation" x="-1735" y="336"/>
         </scene>
-        <!--Home View Controller-->
+        <!--ExpolreVC-->
         <scene sceneID="kbu-JS-eIe">
             <objects>
-                <viewController id="iJM-bT-x1y" customClass="HomeViewController" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iJM-bT-x1y" customClass="ExpolreVC" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9g5-zz-u5r">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,10 +129,10 @@
             </objects>
             <point key="canvasLocation" x="527" y="-1477"/>
         </scene>
-        <!--Profile Vc-->
+        <!--CameraVC-->
         <scene sceneID="6nk-vo-eO6">
             <objects>
-                <viewController id="Vak-i8-NQn" customClass="ProfileVc" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Vak-i8-NQn" customClass="CameraVC" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nDu-O6-B6p">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,10 +178,10 @@
             </objects>
             <point key="canvasLocation" x="526" y="0.0"/>
         </scene>
-        <!--CameraVC-->
+        <!--Profile Vc-->
         <scene sceneID="BLL-nb-id4">
             <objects>
-                <viewController id="may-1s-WjY" customClass="CameraVC" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="may-1s-WjY" customClass="ProfileVc" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PoA-cd-Kod">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
