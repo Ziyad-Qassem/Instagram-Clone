@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC1D4BBD2CBE79CE008A71E0 /* StringClassExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1D4BBC2CBE79CE008A71E0 /* StringClassExtention.swift */; };
 		DC2A9A722C9E2E1F000011C6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DC2A9A712C9E2E1F000011C6 /* FirebaseAnalytics */; };
 		DC2A9A742C9E2E1F000011C6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DC2A9A732C9E2E1F000011C6 /* FirebaseAuth */; };
 		DC2A9A762C9E2E1F000011C6 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = DC2A9A752C9E2E1F000011C6 /* FirebaseCrashlytics */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC1D4BBC2CBE79CE008A71E0 /* StringClassExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringClassExtention.swift; sourceTree = "<group>"; };
 		DC2A9A792C9E308C000011C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DC2A9A7C2C9E31F5000011C6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		DC2A9A7E2C9E32B5000011C6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -72,6 +74,10 @@
 		DCE56D3F2C9E227B00E78B5F /* PostEditorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorVC.swift; sourceTree = "<group>"; };
 		DCE56D412C9E229600E78B5F /* PublishPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		DCF200132C9F313B00999BE7 /* Other */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Other; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DCE56D032C9E1FCC00E78B5F /* Frameworks */ = {
@@ -127,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				DC2A9A912C9E44F3000011C6 /* UIViewExtenisoin.swift */,
+				DC1D4BBC2CBE79CE008A71E0 /* StringClassExtention.swift */,
 			);
 			path = Extenisions;
 			sourceTree = "<group>";
@@ -150,6 +157,7 @@
 		DCE56D082C9E1FCC00E78B5F /* Instagram_Clone */ = {
 			isa = PBXGroup;
 			children = (
+				DCF200132C9F313B00999BE7 /* Other */,
 				DC2A9A902C9E44CF000011C6 /* Extenisions */,
 				DC2A9A852C9E3EA9000011C6 /* Services */,
 				DC2A9A7B2C9E31D6000011C6 /* ViewModels */,
@@ -259,6 +267,9 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				DCF200132C9F313B00999BE7 /* Other */,
+			);
 			name = Instagram_Clone;
 			packageProductDependencies = (
 				DC2A9A712C9E2E1F000011C6 /* FirebaseAnalytics */,
@@ -348,6 +359,7 @@
 				DCE56D0C2C9E1FCC00E78B5F /* SceneDelegate.swift in Sources */,
 				DCE56D2B2C9E218300E78B5F /* ProfileVc.swift in Sources */,
 				DCE56D362C9E221500E78B5F /* EditProfileVC.swift in Sources */,
+				DC1D4BBD2CBE79CE008A71E0 /* StringClassExtention.swift in Sources */,
 				DC2A9A8B2C9E3F45000011C6 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,8 +518,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -534,8 +545,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

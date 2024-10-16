@@ -8,30 +8,31 @@
 import Foundation
 import UIKit
 extension UIView {
-    var width : CGFloat  {
+   public var viewWidth : CGFloat  {
         return frame.size.width
     }
-    var height : CGFloat {
+    public var viewHeight : CGFloat {
         return frame.size.height
     }
-    var viewLeft : CGFloat {
+    public var viewLeft : CGFloat {
         return frame.origin.x
     }
     
-    var viewRight : CGFloat {
-        return viewLeft + width
+    public  var viewRight : CGFloat {
+        return viewLeft + frame.size.width
     }
     
-    var viewTop : CGFloat {
+    public var viewTop : CGFloat {
         return frame.origin.y
     }
     
-    var viewBottom : CGFloat {
-        return viewTop + height
+    public var viewBottom : CGFloat {
+        return viewTop + frame.size.height
     }
     
+   
     
-    func addSubViews (_ views : UIView...) {
+    func CustomAddSubViews (_ views : UIView...) {
         
         views.forEach{self.addSubview($0)}
         
