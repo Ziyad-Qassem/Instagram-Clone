@@ -109,16 +109,19 @@ class LoginVC: UIViewController {
         }
         
         viewModel.loginUser(email: userEmailField.text, password: userPasswordField.text, completion:   { success in
-            if success {
-                self.dismiss(animated: true)
+            DispatchQueue.main.async {
+                if success {
+                    self.dismiss(animated: true)
+                }
+                else {
+                    let alert = UIAlertController(title: "Log In error", message: self.viewModel.errorMessage, preferredStyle: .alert)
+                    
+                    alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel))
+                    
+                    self.present(alert, animated: true)
+                }
             }
-            else {
-                let alert = UIAlertController(title: "Log In error", message: self.viewModel.errorMessage, preferredStyle: .alert)
-                
-                alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel))
-                
-                self.present(alert, animated: true)
-            }
+           
             
         })
         

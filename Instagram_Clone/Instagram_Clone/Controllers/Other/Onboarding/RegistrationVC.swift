@@ -84,15 +84,18 @@ class RegistrationVC: UIViewController {
         userEmailTextField.resignFirstResponder()
         userPasswordTextField.resignFirstResponder()
         viewModel.createUserInFirebase(userEmail: userEmailTextField.text, userPassword: userPasswordTextField.text, userName: userNameTextField.text) { registered in
-            if registered{
-                let vc = HomeViewController()
-                vc.modalPresentationStyle = .fullScreen
-                self.present(vc, animated: true)
-            }
-            else {
-                let alert = UIAlertController(title: "Registration Error", message: self.viewModel.errorMessage, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "dismiss", style: .cancel))
-                self.present(alert, animated: true)
+            DispatchQueue.main.async {
+                if registered{
+                    let vc = HomeViewController()
+                    vc.modalPresentationStyle = .fullScreen
+                    self.present(vc, animated: true)
+                }
+                else {
+                    let alert = UIAlertController(title: "Registration Error", message: self.viewModel.errorMessage, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "dismiss", style: .cancel))
+                    self.present(alert, animated: true)
+                }
+
             }
         }
        

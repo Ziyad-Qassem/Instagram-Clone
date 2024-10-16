@@ -19,7 +19,7 @@ public class DataBaseManager {
     
     public func cancreateNewUser(with email : String , username : String , completion : @escaping (Bool) -> Void
     )  {
-        
+        completion(true)
     }
     // adding a new user to database
     public func addNewUserTDatabase (with email : String , userName : String, completion : @escaping (Bool) -> Void) {

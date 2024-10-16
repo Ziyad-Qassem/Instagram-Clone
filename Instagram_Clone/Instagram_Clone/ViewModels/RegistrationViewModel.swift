@@ -20,7 +20,7 @@ private let format = "SELF MATCHES %@"
             return
         }
         // checks the email and password is in the right form
-        if isValidEmail(email: userEmail!) , isValidPassword(password: userPassword!) {
+//        if isValidEmail(email: userEmail!) , isValidPassword(password: userPassword!) {
              // checks if the user email or name already exists in database
             
             DataBaseManager.shared.cancreateNewUser(with: email, username: name, completion: { canCreate in
@@ -57,12 +57,12 @@ private let format = "SELF MATCHES %@"
                     return
                 }
             })
-        }
-        else {
-            errorMessage = "please check that the email is in the right form or the password has numbers"
-            completion(false)
-            return
-        }
+//        }
+//        else {
+//            errorMessage = "please check that the email is in the right form or the password has numbers"
+//            completion(false)
+//            return
+//        }
     }
   private  func isValidEmail(email: String) -> Bool {
             let regex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"

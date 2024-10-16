@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DC1D4BBD2CBE79CE008A71E0 /* StringClassExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1D4BBC2CBE79CE008A71E0 /* StringClassExtention.swift */; };
+		DC1D4BBF2CBF7BF9008A71E0 /* CellModelForSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1D4BBE2CBF7BF9008A71E0 /* CellModelForSettings.swift */; };
+		DC1D4BC32CBF7EB4008A71E0 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1D4BC22CBF7EB4008A71E0 /* SettingsViewModel.swift */; };
 		DC2A9A722C9E2E1F000011C6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DC2A9A712C9E2E1F000011C6 /* FirebaseAnalytics */; };
 		DC2A9A742C9E2E1F000011C6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DC2A9A732C9E2E1F000011C6 /* FirebaseAuth */; };
 		DC2A9A762C9E2E1F000011C6 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = DC2A9A752C9E2E1F000011C6 /* FirebaseCrashlytics */; };
@@ -44,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		DC1D4BBC2CBE79CE008A71E0 /* StringClassExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringClassExtention.swift; sourceTree = "<group>"; };
+		DC1D4BBE2CBF7BF9008A71E0 /* CellModelForSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModelForSettings.swift; sourceTree = "<group>"; };
+		DC1D4BC22CBF7EB4008A71E0 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		DC2A9A792C9E308C000011C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DC2A9A7C2C9E31F5000011C6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		DC2A9A7E2C9E32B5000011C6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 				DC2A9A7C2C9E31F5000011C6 /* LoginViewModel.swift */,
 				DC2A9A7E2C9E32B5000011C6 /* HomeViewModel.swift */,
 				DC2A9A832C9E385C000011C6 /* RegistrationViewModel.swift */,
+				DC1D4BC22CBF7EB4008A71E0 /* SettingsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 				DCE56D3D2C9E224F00E78B5F /* SearchResultVC.swift */,
 				DCE56D3F2C9E227B00E78B5F /* PostEditorVC.swift */,
 				DCE56D412C9E229600E78B5F /* PublishPostVC.swift */,
+				DC1D4BBE2CBF7BF9008A71E0 /* CellModelForSettings.swift */,
 			);
 			path = "General Views";
 			sourceTree = "<group>";
@@ -356,11 +362,13 @@
 				DCE56D3E2C9E224F00E78B5F /* SearchResultVC.swift in Sources */,
 				DCE56D272C9E216500E78B5F /* CameraVC.swift in Sources */,
 				DCE56D252C9E214C00E78B5F /* ExpolreVC.swift in Sources */,
+				DC1D4BBF2CBF7BF9008A71E0 /* CellModelForSettings.swift in Sources */,
 				DCE56D0C2C9E1FCC00E78B5F /* SceneDelegate.swift in Sources */,
 				DCE56D2B2C9E218300E78B5F /* ProfileVc.swift in Sources */,
 				DCE56D362C9E221500E78B5F /* EditProfileVC.swift in Sources */,
 				DC1D4BBD2CBE79CE008A71E0 /* StringClassExtention.swift in Sources */,
 				DC2A9A8B2C9E3F45000011C6 /* StorageManager.swift in Sources */,
+				DC1D4BC32CBF7EB4008A71E0 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
