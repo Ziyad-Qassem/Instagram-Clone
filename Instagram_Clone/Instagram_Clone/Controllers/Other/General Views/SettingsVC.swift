@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SafariServices
 final class SettingsVC: UIViewController {
     
     private let  viewModel  = SettingsViewModel()
@@ -40,16 +40,85 @@ final class SettingsVC: UIViewController {
     }
     
     private func configureModels() {
+        // section 0
+        data.append([SettingsCellModel(title: "Edit profile") {[weak self] in
+                                self?.didTapEditProfile()
+            
+                    },
+                     SettingsCellModel(title: "Invite Friends") { [weak self] in
+                                self?.didTapInviteFriends()
+                    },
+                     SettingsCellModel(title: "Save Original Posts") { [weak self] in
+                                self?.didTapSaveOriginalPost()
+                    }])
         
-        let section = [
+        // section 1
+        data.append([SettingsCellModel(title: "Terms Of Service "){[weak self] in
+                    self?.didTapLink(url: .terms, errorMessage: "Terms Of Service")
+                    }])
+        // section 2
+        data.append( [SettingsCellModel(title: "Privacy Policy"){ [weak self] in
+                    self?.didTapLink(url: .terms, errorMessage: "Privacy Policy")
+                        }])
+        // section 3
+        data.append([SettingsCellModel(title: "Help / FeedBack ")  { [weak self] in
+            self?.didTapLink(url: .terms, errorMessage: "Help Center")
+        }])
+        // section 4
+     // adding log out section to table view
+        data.append([
             SettingsCellModel(title: "Log Out") { [weak self] in
                 self?.didTapLogOut()
 
             }
-        ]
-        data.append(section)
+        ])
     }
     
+   
+
+}
+// MARK: - applying tableview protocols
+
+extension SettingsVC : UITableViewDelegate , UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return data.count
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return   data[section].count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = data[indexPath.section][indexPath.row].title
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        data[indexPath.section][indexPath.row].handler()
+            }
+    
+    
+}
+// MARK: - all buttons actions and cell selection actions
+
+extension SettingsVC {
+    private func didTapEditProfile() {
+        let vc = EditProfileVC()
+        vc.title = "Edit Profile"
+        let navVC = UINavigationController(rootViewController: vc)
+        navVC.modalPresentationStyle = .fullScreen
+        present(navVC, animated: true)
+        }
+    
+    private func didTapInviteFriends() {
+       // show share sheet to invite friends
+        
+    }
+    
+    private func didTapSaveOriginalPost(){
+
+    }
     private func didTapLogOut() {
         let actionSheet = UIAlertController(title: "Log Out", message: "Are you sure you want to log out?", preferredStyle: .actionSheet)
         actionSheet.addAction(UIAlertAction(title: "Cancle", style: .cancel))
@@ -80,28 +149,22 @@ final class SettingsVC: UIViewController {
         
         present(actionSheet , animated: true)
     }
-
-}
-// MARK: - applying tableview protocols
-
-extension SettingsVC : UITableViewDelegate , UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return data.count
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return   data[section].count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = data[indexPath.section][indexPath.row].title
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        data[indexPath.section][indexPath.row].handler()
+            
+    private func didTapLink(url : SettingsURL , errorMessage : String){
+        viewModel.openURL(url: url) {  [weak self] url in
+            guard let url = url else {
+                let alert = UIAlertController(title: "Error", message: "Couldn't Open \(errorMessage)", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "dismiss", style: .default))
+                
+                self?.present(alert, animated: true)
+                
+                return
             }
+            let vc = SFSafariViewController(url: url)
+            
+            self?.present(vc, animated: true)
+        }
+    }
     
     
 }
