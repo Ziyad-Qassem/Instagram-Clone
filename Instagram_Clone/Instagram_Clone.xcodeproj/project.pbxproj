@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC0EC5BE2CD1A47E00DC2E85 /* ListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0EC5BD2CD1A47E00DC2E85 /* ListViewViewModel.swift */; };
 		DC1D4BBD2CBE79CE008A71E0 /* StringClassExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1D4BBC2CBE79CE008A71E0 /* StringClassExtention.swift */; };
 		DC1D4BBF2CBF7BF9008A71E0 /* CellModelForSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1D4BBE2CBF7BF9008A71E0 /* CellModelForSettings.swift */; };
 		DC1D4BC32CBF7EB4008A71E0 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1D4BC22CBF7EB4008A71E0 /* SettingsViewModel.swift */; };
@@ -24,6 +25,9 @@
 		DC2A9A922C9E44F3000011C6 /* UIViewExtenisoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2A9A912C9E44F3000011C6 /* UIViewExtenisoin.swift */; };
 		DC327B912CCC2477007A8E0A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DC327B902CCC2477007A8E0A /* Kingfisher */; };
 		DC327B932CCC3BF9007A8E0A /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC327B922CCC3BF9007A8E0A /* Users.swift */; };
+		DCA254B02CCD60C80045DF1B /* ProfileViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA254AF2CCD60C80045DF1B /* ProfileViewViewModel.swift */; };
+		DCA254B22CCD65020045DF1B /* PostViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA254B12CCD65020045DF1B /* PostViewViewModel.swift */; };
+		DCC264092CD0F7A80091AE13 /* FollowingListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC264082CD0F7A80091AE13 /* FollowingListModel.swift */; };
 		DCE56D0A2C9E1FCC00E78B5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE56D092C9E1FCC00E78B5F /* AppDelegate.swift */; };
 		DCE56D0C2C9E1FCC00E78B5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE56D0B2C9E1FCC00E78B5F /* SceneDelegate.swift */; };
 		DCE56D0E2C9E1FCC00E78B5F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE56D0D2C9E1FCC00E78B5F /* HomeViewController.swift */; };
@@ -50,6 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC0EC5BD2CD1A47E00DC2E85 /* ListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewViewModel.swift; sourceTree = "<group>"; };
 		DC1D4BBC2CBE79CE008A71E0 /* StringClassExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringClassExtention.swift; sourceTree = "<group>"; };
 		DC1D4BBE2CBF7BF9008A71E0 /* CellModelForSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModelForSettings.swift; sourceTree = "<group>"; };
 		DC1D4BC22CBF7EB4008A71E0 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
@@ -61,6 +66,9 @@
 		DC2A9A8E2C9E4020000011C6 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
 		DC2A9A912C9E44F3000011C6 /* UIViewExtenisoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtenisoin.swift; sourceTree = "<group>"; };
 		DC327B922CCC3BF9007A8E0A /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		DCA254AF2CCD60C80045DF1B /* ProfileViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewViewModel.swift; sourceTree = "<group>"; };
+		DCA254B12CCD65020045DF1B /* PostViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewViewModel.swift; sourceTree = "<group>"; };
+		DCC264082CD0F7A80091AE13 /* FollowingListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingListModel.swift; sourceTree = "<group>"; };
 		DCE56D062C9E1FCC00E78B5F /* Instagram_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE56D092C9E1FCC00E78B5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCE56D0B2C9E1FCC00E78B5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +100,7 @@
 		DCF44CF42CBFBEC400598A46 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				FollowersListTableViewCell.swift,
 				FormTableViewCell.swift,
 				"Home Feed cells/IGFeedPostActionsTableViewCell.swift",
 				"Home Feed cells/IGFeedPostGeneralTableViewCell.swift",
@@ -142,6 +151,9 @@
 				DC2A9A832C9E385C000011C6 /* RegistrationViewModel.swift */,
 				DC1D4BC22CBF7EB4008A71E0 /* SettingsViewModel.swift */,
 				DCF44CFE2CBFD32500598A46 /* EditProfileViewModel.swift */,
+				DCA254AF2CCD60C80045DF1B /* ProfileViewViewModel.swift */,
+				DCA254B12CCD65020045DF1B /* PostViewViewModel.swift */,
+				DC0EC5BD2CD1A47E00DC2E85 /* ListViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -238,6 +250,7 @@
 				DCF44CFC2CBFC23100598A46 /* PhotoPost.swift */,
 				DCF44D002CBFEFB100598A46 /* EditProfileFormModel.swift */,
 				DC327B922CCC3BF9007A8E0A /* Users.swift */,
+				DCC264082CD0F7A80091AE13 /* FollowingListModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -383,7 +396,9 @@
 				DC327B932CCC3BF9007A8E0A /* Users.swift in Sources */,
 				DCE56D3A2C9E223B00E78B5F /* ListVC.swift in Sources */,
 				DCE56D292C9E217900E78B5F /* NotificationVC.swift in Sources */,
+				DCC264092CD0F7A80091AE13 /* FollowingListModel.swift in Sources */,
 				DCE56D402C9E227B00E78B5F /* PostEditorVC.swift in Sources */,
+				DCA254B02CCD60C80045DF1B /* ProfileViewViewModel.swift in Sources */,
 				DC2A9A842C9E385C000011C6 /* RegistrationViewModel.swift in Sources */,
 				DCE56D422C9E229600E78B5F /* PublishPostVC.swift in Sources */,
 				DCE56D302C9E21DC00E78B5F /* LoginVC.swift in Sources */,
@@ -396,9 +411,11 @@
 				DCE56D322C9E21ED00E78B5F /* RegistrationVC.swift in Sources */,
 				DC2A9A8F2C9E4020000011C6 /* DataBaseManager.swift in Sources */,
 				DCE56D3E2C9E224F00E78B5F /* SearchResultVC.swift in Sources */,
+				DCA254B22CCD65020045DF1B /* PostViewViewModel.swift in Sources */,
 				DCE56D272C9E216500E78B5F /* CameraVC.swift in Sources */,
 				DCE56D252C9E214C00E78B5F /* ExpolreVC.swift in Sources */,
 				DC1D4BBF2CBF7BF9008A71E0 /* CellModelForSettings.swift in Sources */,
+				DC0EC5BE2CD1A47E00DC2E85 /* ListViewViewModel.swift in Sources */,
 				DCF44D012CBFEFB100598A46 /* EditProfileFormModel.swift in Sources */,
 				DCE56D0C2C9E1FCC00E78B5F /* SceneDelegate.swift in Sources */,
 				DCF44CFF2CBFD32500598A46 /* EditProfileViewModel.swift in Sources */,
