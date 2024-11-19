@@ -38,6 +38,7 @@ public struct PostComments {
     let likes : [CommentLikes]
 }
 
-public enum UserPostType {
-    case photo , video
+public enum UserPostType  : String{
+    case photo = "Photo"
+    case video = "Video"
 }

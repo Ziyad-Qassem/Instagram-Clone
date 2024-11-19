@@ -12,7 +12,8 @@ struct User {
     let birthDate : Date
     let gender : GenderType
     let counts : UsersCounts
-    let joinDate : Date 
+    let joinDate : Date
+    let profilePicture : URL
 }
 
 enum GenderType {

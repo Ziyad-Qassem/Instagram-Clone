@@ -1,5 +1,5 @@
 //
-//  IGFeedPostTableViewCell.swift
+//  IGFeedPostGeneralTableViewCell.swift
 //  Instagram_Clone
 //
 //  Created by Ziyad Qassem on 16/10/2024.
@@ -7,9 +7,16 @@
 
 import UIKit
 
-final class IGFeedPostTableViewCell: UITableViewCell {
-    static let identifier = "IGFeedPostCell"
+class IGFeedPostGeneralTableViewCell: UITableViewCell {
+   
+    static let identifier = "IGFeedPostGeneralTableViewCell"
     
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
@@ -18,7 +25,4 @@ final class IGFeedPostTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public func configure(){
-        
-    }
 }

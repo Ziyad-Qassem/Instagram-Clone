@@ -12,7 +12,7 @@ class NotificationViewViewModel {
     private var userNotification : [NotificationsModel] = []
     
     func getAllNotifications() -> [NotificationsModel] {
-        userNotification
+         return userNotification
     }
     
     private func fetchNotifications() {

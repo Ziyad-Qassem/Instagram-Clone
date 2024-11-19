@@ -9,10 +9,9 @@ import UIKit
 
  class PostVC: UIViewController {
     private var myPost: UserPost?
-    
+     private let model = PostViewViewModel()
     private let tableView : UITableView = {
         let tableView = UITableView()
-//        tableView.register(PostCell.self, forCellReuseIdentifier: PostCell.identifier)
         return tableView
      }()
      
@@ -33,6 +32,12 @@ import UIKit
          tableView.delegate = self
          tableView.dataSource = self
          
+         tableView.register(IGFeedPostTableViewCell.self, forCellReuseIdentifier: IGFeedPostTableViewCell.identifier)
+         tableView.register(IGFeedPostHeaderTableViewCell.self, forCellReuseIdentifier: IGFeedPostHeaderTableViewCell.identifier)
+         tableView.register(IGFeedPostActionsTableViewCell.self, forCellReuseIdentifier: IGFeedPostActionsTableViewCell.identifier)
+         tableView.register(IGFeedPostGeneralTableViewCell.self, forCellReuseIdentifier: IGFeedPostGeneralTableViewCell.identifier)
+         
+         
         // Do any additional setup after loading the view.
     }
      override func viewDidLayoutSubviews() {
@@ -48,7 +53,7 @@ extension PostVC : UITableViewDataSource, UITableViewDelegate {
         return 0
     }
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return 4
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
@@ -59,4 +64,7 @@ extension PostVC : UITableViewDataSource, UITableViewDelegate {
     }
     
 }
+
+
+
 

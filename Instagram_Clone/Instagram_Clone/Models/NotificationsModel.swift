@@ -8,7 +8,14 @@
 import Foundation
 struct NotificationsModel {
     let notificationMessage : String
-    let userImageURL : URL
+    let followingUser : User
     let notificationDate : Date
-    let postID :    String
+    let notificationType : NotificationType
+
+    
+    }
+
+enum NotificationType {
+    case follow(state : FollowState)
+    case like(post : UserPost)
 }
