@@ -25,6 +25,9 @@ class HomeViewController: UIViewController {
         view.addSubview(tableView)
         
         tableView.register(IGFeedPostTableViewCell.self, forCellReuseIdentifier: IGFeedPostTableViewCell.identifier)
+        tableView.register(IGFeedPostHeaderTableViewCell.self, forCellReuseIdentifier: IGFeedPostHeaderTableViewCell.identifier)
+        tableView.register(IGFeedPostActionsTableViewCell.self, forCellReuseIdentifier: IGFeedPostActionsTableViewCell.identifier)
+        tableView.register(IGFeedPostCommentsTableViewCell.self, forCellReuseIdentifier: IGFeedPostCommentsTableViewCell.identifier)
         tableView.delegate = self
         tableView.dataSource = self
         // Do any additional setup after loading the view.

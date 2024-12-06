@@ -119,7 +119,7 @@
 				FollowersListTableViewCell.swift,
 				FormTableViewCell.swift,
 				"Home Feed & post cells/IGFeedPostActionsTableViewCell.swift",
-				"Home Feed & post cells/IGFeedPostGeneralTableViewCell.swift",
+				"Home Feed & post cells/IGFeedPostCommentsTableViewCell.swift",
 				"Home Feed & post cells/IGFeedPostHeaderTableViewCell.swift",
 				"Home Feed & post cells/IGFeedPostTableViewCell.swift",
 				PhotoCollectionViewCell.swift,

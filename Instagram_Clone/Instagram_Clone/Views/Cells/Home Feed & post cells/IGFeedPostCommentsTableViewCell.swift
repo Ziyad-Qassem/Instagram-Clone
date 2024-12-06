@@ -7,9 +7,9 @@
 
 import UIKit
 
-class IGFeedPostGeneralTableViewCell: UITableViewCell {
+class IGFeedPostCommentsTableViewCell: UITableViewCell {
    
-    static let identifier = "IGFeedPostGeneralTableViewCell"
+    static let identifier = "IGFeedPostCommentsTableViewCell"
     
 
     override func awakeFromNib() {
