@@ -32,7 +32,7 @@ import UIKit
          tableView.delegate = self
          tableView.dataSource = self
          
-         tableView.register(IGFeedPostTableViewCell.self, forCellReuseIdentifier: IGFeedPostTableViewCell.identifier)
+         tableView.register(IGFeedPostContentTableViewCell.self, forCellReuseIdentifier: IGFeedPostContentTableViewCell.identifier)
          tableView.register(IGFeedPostHeaderTableViewCell.self, forCellReuseIdentifier: IGFeedPostHeaderTableViewCell.identifier)
          tableView.register(IGFeedPostActionsTableViewCell.self, forCellReuseIdentifier: IGFeedPostActionsTableViewCell.identifier)
          tableView.register(IGFeedPostCommentsTableViewCell.self, forCellReuseIdentifier: IGFeedPostCommentsTableViewCell.identifier)
@@ -69,7 +69,7 @@ extension PostVC : UITableViewDataSource, UITableViewDelegate {
             
             return cell
         case 1 :
-            let cell = tableView.dequeueReusableCell(withIdentifier: IGFeedPostTableViewCell.identifier , for: indexPath) as! IGFeedPostTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: IGFeedPostContentTableViewCell.identifier , for: indexPath) as! IGFeedPostContentTableViewCell
             
             
             return cell

@@ -24,7 +24,6 @@ class IGFeedPostHeaderTableViewCell: UITableViewCell {
     
     private let userNameLabel : UILabel = {
         let label = UILabel()
-        label.text = "Ziyad Qassem"
         label.textColor = .label
         label.font = .preferredFont(forTextStyle: .headline)
         return label
@@ -32,6 +31,7 @@ class IGFeedPostHeaderTableViewCell: UITableViewCell {
     
     private let optionsMenuButton : UIButton = {
         let button = UIButton()
+        button.tintColor = .label
         button.setImage(UIImage(named: "ellipsis"), for: .normal)
         return button
     }()
@@ -71,15 +71,21 @@ class IGFeedPostHeaderTableViewCell: UITableViewCell {
         configureViewLayout()
     }
     
+    func configurecell(with user : User){
+        userNameLabel.text = user.username
+        profilePicture.kf.setImage(with: user.profilePicture)
+    }
+    
     private func configureViewLayout() {
-        profilePicture.frame = CGRect(x: 3, y: 3, width: contentView.viewHeight - 6, height: contentView.viewHeight - 6).integral
-        profilePicture.layer.cornerRadius = profilePicture.viewHeight / 2
-        
         let size = contentView.viewHeight - 4
+        profilePicture.frame = CGRect(x: 2, y: 2, width: size, height: size - 5).integral
+        profilePicture.layer.cornerRadius = size / 2
         
-        userNameLabel.frame = CGRect(x: profilePicture.viewRight + 5, y: 0, width: size, height: size)
+       
         
-        optionsMenuButton.frame = CGRect(x: contentView.viewWidth - 5 - size, y: 0, width: size, height: size)
+        userNameLabel.frame = CGRect(x: profilePicture.viewRight + 5, y: 0, width: contentView.viewWidth -  size - size  - 15, height: size)
+        
+        optionsMenuButton.frame = CGRect(x: contentView.viewWidth - size, y: 2, width: size, height: size)
         
     }
 
