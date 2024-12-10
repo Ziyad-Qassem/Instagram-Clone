@@ -42,7 +42,8 @@ class NotificationVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        let mockPost = UserPost(indentifier: "", postType: .photo, thumpnailImageURL: URL(string: "https://pin.it/5K8mgR5xz")!, postURL: URL(string: "https://www.google.com/")!, caption: nil, likes: [], comments: [], createdDate: Date(), taggedUsers: [])
+        let mockUser  = User(username: "napping_ninja", name: ("Ziyad" , "Qassem"), birthDate: Date(), gender: .male, counts: UsersCounts(fellowers: 1000, posts: 333, fellowing: 43), joinDate: Date(), profilePicture: URL(string: "https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")! )
+        let mockPost = UserPost(indentifier: "", postType: .photo, thumpnailImageURL: URL(string: "https://pin.it/5K8mgR5xz")!, postURL: URL(string: "https://www.google.com/")!, caption: nil, likes: [], comments: [], createdDate: Date(), taggedUsers: [], postOwner: mockUser)
         for x in 0...100 {
             let model = NotificationsModel(notificationMessage: "hello world"
                                            , followingUser: User(username: "Ziyad Qassem", name: (first : "Ziyad" , last : "Qassem"), birthDate:Date() , gender: .male, counts: UsersCounts(fellowers: 1, posts: 1, fellowing: 1), joinDate: Date(), profilePicture: URL(string: "https://pin.it/5K8mgR5xz")!),

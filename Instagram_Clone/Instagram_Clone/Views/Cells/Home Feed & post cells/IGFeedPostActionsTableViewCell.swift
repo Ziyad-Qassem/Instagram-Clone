@@ -33,7 +33,8 @@ class IGFeedPostActionsTableViewCell: UITableViewCell {
     
     private let sharebutton : UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(named: "square.and.arrow.up"), for: .normal)
+        button.setImage(UIImage(named: "parperplane"), for: .normal)
+        button.tintColor = .label
         return button
     }()
     
@@ -76,15 +77,15 @@ class IGFeedPostActionsTableViewCell: UITableViewCell {
     }
     
     private func setSubviewLayout() {
-        let size = contentView.viewHeight / 4
+        let size = contentView.viewHeight - 10
         
         likeButton.frame = CGRect(x: 3, y: 0, width: size , height: viewHeight - 10)
         
-        commentsButtons.frame = CGRect(x: likeButton.viewRight + 5 , y: 0, width: size, height: viewHeight - 10)
+        commentsButtons.frame = CGRect(x: likeButton.viewRight + 5 , y: 0, width: size, height: size)
         
-        sharebutton.frame = CGRect(x: commentsButtons.viewRight + 5, y: 0, width: size, height: viewHeight - 10)
+        sharebutton.frame = CGRect(x: commentsButtons.viewRight + 5, y: 0, width: size, height: size)
         
-        saveButton.frame = CGRect(x: viewWidth - 5 - size, y: 0, width: size, height: viewHeight - 10)
+        saveButton.frame = CGRect(x: viewWidth - size, y: 0, width: size, height: size)
         
     }
     

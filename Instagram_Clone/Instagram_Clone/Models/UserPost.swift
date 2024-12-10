@@ -16,8 +16,7 @@ public struct UserPost {
     let comments : [PostComments]
     let createdDate : Date
     let taggedUsers: [User]
-    
-    
+    let postOwner : User
 }
 
 public struct PostLikes {
